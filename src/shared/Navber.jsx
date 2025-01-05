@@ -1,6 +1,6 @@
 import logo from "../assets/coding.png";
 import { Element, Link } from "react-scroll";
-import resume from "../assets/Resume/Resume.pdf";
+import resume from "../../public/Resume.pdf";
 
 const Navber = () => {
   const links = (
@@ -67,11 +67,11 @@ const Navber = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="text-sm font-medium text-white">
+          <button className="text-sm font-medium text-white">
             <a href={resume} download="resume">
               Download Resume
             </a>
-          </Link>
+          </button>
         </div>
       </div>
     </Element>
