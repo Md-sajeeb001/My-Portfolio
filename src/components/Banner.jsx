@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import developer from "../assets/developer.jpg";
 import Button from "../shared/Button/Button";
+// import resume from "../../public/";
+import resume from "../assets/Resume/Resume.pdf";
 
 const Banner = () => {
   return (
@@ -13,9 +15,11 @@ const Banner = () => {
           Hi, im Mohammad Sajeeb, A Passionate Full Stack Developer Based In The
           Cumilla, Bangladesh.
         </p>
-        <div className="sm:text-center">
-          <Button text="Download Resume"></Button>
-        </div>
+        <button className="sm:text-center">
+          <Button text="Download Resume">
+            <a href={resume} download={resume}></a>
+          </Button>
+        </button>
         <div className="space-x-3">
           <Link
             className="text-sm text-slate-600 underline-[#363636] underline underline-offset-2 hover:text-blue-900"

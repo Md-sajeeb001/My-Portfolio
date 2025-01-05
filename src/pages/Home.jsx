@@ -1,25 +1,32 @@
+import { Element } from "react-scroll";
 import Banner from "../components/Banner";
 import AboutMe from "./AboutMe/AboutMe";
 import MyProjects from "./MyProjects/MyProjects";
 import MySkills from "./MySkills/MySkills";
+import ContactMe from "./Contact/ContactMe";
 
 const Home = () => {
   return (
-    <div className="px-6 lg:px-0">
-      <div>
-        <Banner></Banner>
-      </div>
-      <div>
-        <AboutMe></AboutMe>
-      </div>
+    <Element name="/">
+      <div className="px-6 lg:px-0">
+        <div>
+          <Banner></Banner>
+        </div>
+        <div>
+          <AboutMe></AboutMe>
+        </div>
 
-      <div>
-        <MySkills></MySkills>
+        <div>
+          <MySkills></MySkills>
+        </div>
+        <div>
+          <MyProjects></MyProjects>
+        </div>
+        <div>
+          <ContactMe></ContactMe>
+        </div>
       </div>
-      <div>
-        <MyProjects></MyProjects>
-      </div>
-    </div>
+    </Element>
   );
 };
 

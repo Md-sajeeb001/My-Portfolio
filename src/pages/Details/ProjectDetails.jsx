@@ -19,13 +19,13 @@ const ProjectDetails = () => {
   // const { description, image, name } = details;
 
   return (
-    <div className="pt-32 pb-14">
+    <div className="lg:pt-32 md:pt-24 pt-28 pb-14">
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <div className="lg:w-1/2">
           <div>
-            <figure className="w-full h-full">
+            <figure className="w-full p-4 h-full">
               <img
-                className="h-full pt-5 object-contain"
+                className="h-full object-contain"
                 src={details?.image}
                 alt="Album"
               />
