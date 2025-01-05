@@ -6,8 +6,8 @@ const Button = ({ text }) => {
       <div className="w-12 h-12 rounded-full bg-slate-200"></div>
       <div className="-ml-4">
         <button className="flex items-center gap-3">
-          <p>{text}</p>
-          <FaArrowRightLong className=""></FaArrowRightLong>
+          <p className="text-black">{text}</p>
+          <FaArrowRightLong className="text-black"></FaArrowRightLong>
         </button>
       </div>
     </div>

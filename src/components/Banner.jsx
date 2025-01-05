@@ -14,9 +14,15 @@ const Banner = () => {
           Hi, im Mohammad Sajeeb, A Passionate Full Stack Developer Based In The
           Cumilla, Bangladesh.
         </p>
-        <button className="sm:text-center">
-          <a href={resume} download="resume"></a>
-          <Button text="Download Resume"></Button>
+        {/* <button className="sm:text-center">
+          <a href={resume} download="resume"></a> */}
+        {/* <Button text="Download Resume"></Button> */}
+        {/* </button> */}
+        <button className="text-sm font-medium text-white">
+          <a href={resume} download="resume">
+            {/* Download Resume */}
+            <Button text="Download Resume"></Button>
+          </a>
         </button>
         <div className="space-x-3">
           <Link
