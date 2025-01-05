@@ -3,6 +3,8 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import ProjectDetails from "../pages/Details/ProjectDetails";
 import AboutMe from "../pages/AboutMe/AboutMe";
+import MyProjects from "../pages/MyProjects/MyProjects";
+import ContactMe from "../pages/Contact/ContactMe";
 
 const routes = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const routes = createBrowserRouter([
       {
         path: "/about",
         element: <AboutMe></AboutMe>,
+      },
+      {
+        path: "/work",
+        element: <MyProjects></MyProjects>,
+      },
+      {
+        path: "/contact",
+        element: <ContactMe></ContactMe>,
       },
       {
         path: "/details/:id",

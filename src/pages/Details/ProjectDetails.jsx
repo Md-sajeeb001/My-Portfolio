@@ -14,9 +14,6 @@ const ProjectDetails = () => {
         setDetails(project);
       });
   }, [id]);
-  console.log(details);
-
-  // const { description, image, name } = details;
 
   return (
     <div className="lg:pt-32 md:pt-24 pt-28 pb-14">
@@ -41,9 +38,10 @@ const ProjectDetails = () => {
               />
             ))}
           </div>
-          <Link to="https://blog-website-7d652.web.app" target="_blank">
+
+          <Link to={details?.liveLink} target="_blank">
             <button className="btn text-white bg-blue-800 hover:bg-blue-950 m-4 pr-4 ">
-              live link
+              Live Link
             </button>
           </Link>
         </div>
@@ -83,22 +81,26 @@ const ProjectDetails = () => {
               ))}
             </div>
             <div className="flex gap-8">
-              <Link
-                to="https://github.com/programming-hero-web-course2/b10a11-server-side-Md-sajeeb001"
-                target="_blank"
-              >
-                <button className="btn text-white bg-blue-800 hover:bg-blue-950">
-                  Git-Server
-                </button>
-              </Link>
-              <Link
-                to="https://github.com/programming-hero-web-course2/b10a11-client-side-Md-sajeeb001"
-                target="_blank"
-              >
-                <button className="btn text-white bg-blue-800 hover:bg-blue-950">
-                  Git-Client
-                </button>
-              </Link>
+              {details?.gitHubLink ? (
+                <Link to={details?.serverLink} target="_blank">
+                  <button className="btn text-white bg-blue-800 hover:bg-blue-950">
+                    GitHub Link
+                  </button>
+                </Link>
+              ) : (
+                <div>
+                  <Link to={details?.serverLink} target="_blank">
+                    <button className="btn text-white bg-blue-800 hover:bg-blue-950">
+                      Git-Server
+                    </button>
+                  </Link>
+                  <Link to={details?.clientLink} target="_blank">
+                    <button className="btn text-white bg-blue-800 hover:bg-blue-950">
+                      Git-Client
+                    </button>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
