@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import developer from "../assets/developer.jpg";
 import Button from "../shared/Button/Button";
 import resume from "../../public/Resume.pdf";
+import github from '../assets/skills/github.png';
+import fackbook from '../assets/skills/facebook.png';
+import linkedin from '../assets/skills/linkedin.png';
+import twitter from '../assets/skills/twitter.png';
 
 const Banner = () => {
   return (
@@ -19,34 +23,42 @@ const Banner = () => {
             <Button text="Download Resume"></Button>
           </a>
         </button>
-        <div className="space-x-3">
+        <div className="space-x-6 flex items-center">
           <Link
             className="text-sm text-slate-600 underline-[#363636] underline underline-offset-2 hover:text-blue-900"
             to="https://github.com/Md-sajeeb001"
             target="_blank"
             title="github"
           >
-            Github
-          </Link>{" "}
-          /
+            <img className="w-8" src={github} alt="" />
+          </Link>
+
           <Link
             className="text-sm text-slate-600 underline-[#363636] underline underline-offset-2 hover:text-blue-900"
-            to="https://www.facebook.com/"
+            to="https://www.facebook.com/saj.eeb.306309"
             target="_blank"
             title="facebook"
           >
-            Facebook
-          </Link>{" "}
-          /
+            <img className="w-8" src={fackbook} alt="" />
+          </Link>
+
           <Link
             className="text-sm text-slate-600 underline-[#363636] underline underline-offset-2 hover:text-blue-900"
-            to="https://discord.com/channels/@me"
+            to="https://www.linkedin.com/in/md-sajeeb-wd/"
             target="_blank"
-            title="facebook"
+            title="linkedin"
           >
-            Discord
-          </Link>{" "}
-          /
+            <img className="w-8" src={linkedin} alt="" />
+          </Link>
+
+          <Link
+            className="text-sm text-slate-600 underline-[#363636] underline underline-offset-2 hover:text-blue-900"
+            to="https://x.com/mdSajeeb010101"
+            target="_blank"
+            title="twitter"
+          >
+            <img className="w-8" src={twitter} alt="" />
+          </Link>
         </div>
       </div>
       <div className="sm:w-1/2">
