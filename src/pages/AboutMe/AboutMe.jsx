@@ -1,33 +1,31 @@
 import { Element } from "react-scroll";
 import developer from "../../assets/developer.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const AboutMe = () => {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <Element name="/about">
       <div className="sm:pt-20 pt-10">
         <div>
-          <div>
+          <div data-aos="fade-right">
             <h3 className="text-4xl font-light sm:text-start text-center max-w-2xl text-[#363636] ">
               i am A passionate{" "}
-              <span className="font-bold text-green-400">
-              Frontend Developer
+              <span className="font-bold text-[#0A66C2] italic ">
+                Frontend Developer
               </span>{" "}
               with a Keep eye details
             </h3>
           </div>
 
-          <div className="lg:flex  justify-center gap-6 mt-14">
+          <div className="lg:flex  justify-center gap-10 mt-14">
             <div className="lg:w-1/2 h-full">
-              <div className="md:flex items-center">
-                <p className="pb-8 sm:hidden block">
-                  <span className="text-xs text-slate-500 underline">
-                    Here's My Hobbies
-                  </span>{" "}
-                  <br />I thrive on solving complex problems and bringing
-                  creative ideas to life through code. When I’m not coding,
-                  you’ll find me traveling to explore new cultures or indulging
-                  in delicious food adventures. These experiences inspire my
-                  work, fueling my creativity and drive to learn.
-                </p>
+              <div data-aos="zoom-in" className="md:flex items-center">
                 <img
                   className="lg:hidden block w-20 rounded-tl-3xl rounded-br-3xl lg:rounded-tl-none lg:rounded-br-none"
                   src={developer}
@@ -37,45 +35,40 @@ const AboutMe = () => {
 
               {/* small and medium device part */}
               <img
-                className="hidden lg:block  w-full rounded-tl-3xl rounded-br-3xl lg:rounded-tl-none lg:rounded-br-none"
+                data-aos="zoom-in"
+                className="hidden lg:block w-full rounded-tl-3xl rounded-br-3xl lg:rounded-tl-none lg:rounded-br-none"
                 src={developer}
                 alt="developer"
               />
-              <p className="pt-8 sm:block hidden">
-                <span className="text-xs text-slate-500 underline">
-                  Here's My Hobbies
-                </span>{" "}
-                <br />I thrive on solving complex problems and bringing creative
-                ideas to life through code. When I’m not coding, you’ll find me
-                traveling to explore new cultures or indulging in delicious food
-                adventures. These experiences inspire my work, fueling my
-                creativity and drive to learn.
-              </p>
             </div>
 
             {/* large device part */}
-            <div className="lg:w-1/2 w-full space-y-3">
+            <div className="lg:w-1/2 w-full space-y-3" data-aos="fade-left">
               <h2 className="text-3xl font-bold text-center underline underline-offset-2 text-[#363636]">
                 About Me.
               </h2>
               <p className="leading-[26px] ">
-                Hi, I'm Mohammad Sajeeb, a passionate  Frontend developer
-                who thrives on building seamless, user-friendly, and innovative
-                web applications. With expertise in both front-end and back-end
-                development, I specialize in creating dynamic websites that are
-                not only visually appealing but also highly functional. I enjoy
-                taking projects from concept to completion, ensuring every
-                detail aligns with your goals. My skills include designing
-                intuitive user interfaces, developing efficient APIs, and
-                implementing scalable, secure back-end systems. Whether it's
-                crafting responsive designs or optimizing complex database
-                structures, I focus on delivering solutions that meet modern web
-                standards. Collaboration is at the heart of my process. I work
-                closely with clients and teams to understand their needs, adapt
-                to challenges, and ensure the end product exceeds expectations.
-                With a commitment to continuous learning, I stay updated on the
-                latest technologies to bring fresh ideas to every project. Let's
-                create something amazing together!
+                Hello! I’m a junior web developer with a passion for building
+                dynamic, user-friendly, and visually appealing websites. My
+                journey in programming began with a curiosity for how the web
+                works, and that curiosity quickly turned into a dedication to
+                mastering front-end development. Over time, I’ve acquired a
+                solid understanding of HTML, CSS, JavaScript, React.js, Tailwind
+                CSS, and back-end technologies like Node.js and MongoDB,
+                enabling me to create both beautiful and functional websites.
+                <br />
+                <br />
+                <span className="text-xs text-slate-500 underline">
+                  Here's My Hobbies
+                </span>{" "}
+                <br />
+                Beyond programming, I’m passionate about exploring new places,
+                blogging about my travel experiences, indulging in delicious
+                food, and meeting new people. These activities allow me to stay
+                inspired and bring fresh perspectives to my work. I believe that
+                a good developer should always be learning, adapting, and
+                evolving, and I’m excited to continue this journey and
+                contribute to the world of web development.
               </p>
             </div>
           </div>

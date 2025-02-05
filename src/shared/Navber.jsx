@@ -16,15 +16,16 @@ const Navber = () => {
         </Link>
       </li>
       <li>
-        <Link to="/work" smooth={true} duration={1000}>
-          Work
-        </Link>
-      </li>
-      <li>
         <Link to="/skills" smooth={true} duration={1000}>
           skills
         </Link>
       </li>
+      <li>
+        <Link to="/work" smooth={true} duration={1000}>
+          Work
+        </Link>
+      </li>
+
       <li>
         <Link to="/contact" smooth={true} duration={1000}>
           Contact
