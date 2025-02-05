@@ -7,9 +7,11 @@ import tailwind from "../../assets/logos/tailwind.png";
 import nodejs from "../../assets/logos/nodejs.png";
 import express from "../../assets/logos/express.png";
 import mongoDB from "../../assets/logos/mongoDB.png";
+import { Element } from "react-scroll";
 
 const MySkills = () => {
   return (
+    <Element name="/skills">
     <div className="lg:py-28 md:py-16 pt-8">
       <div>
         <h2 className="text-3xl font-bold text-center underline underline-offset-2 text-[#363636]">
@@ -65,6 +67,7 @@ const MySkills = () => {
         </ul>
       </div>
     </div>
+    </Element>
   );
 };
 

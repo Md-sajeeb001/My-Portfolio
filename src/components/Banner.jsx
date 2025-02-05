@@ -8,11 +8,11 @@ const Banner = () => {
     <div className="sm:flex items-center gap-14  sm:py-12 sm:pt-28 pt-20 ">
       <div className="sm:w-1/2 w-full space-y-4 md:space-y-6 lg:space-y-8 sm:pb-0 pb-5  sm:text-start text-center">
         <h2 className="lg:text-7xl md:text-5xl text-4xl text-[#363636] font-bold">
-          Full Stack Developer.
+          Frontend Developer.
         </h2>
         <p className="text-slate-600 leading-8">
-          Hi, im Mohammad Sajeeb, A Passionate Full Stack Developer Based In The
-          Cumilla, Bangladesh.
+          Hi, im Mohammad Sajeeb, I am a Frontend Developer, crafting beautiful
+          and user-friendly websites with creativity and precision
         </p>
         <button className="text-sm font-medium text-white">
           <a href={resume} download="resume">

@@ -21,6 +21,11 @@ const Navber = () => {
         </Link>
       </li>
       <li>
+        <Link to="/skills" smooth={true} duration={1000}>
+          skills
+        </Link>
+      </li>
+      <li>
         <Link to="/contact" smooth={true} duration={1000}>
           Contact
         </Link>
@@ -31,8 +36,8 @@ const Navber = () => {
   return (
     <Element name="/">
       <div
-        className="navbar lg:rounded-tl-2xl lg:rounded-tr-2xl bg-[#3d1fa3]
-     text-white fixed top-0 z-50 pr-6 container mx-auto"
+        className="navbar 
+     text-black fixed top-0 z-50 pr-6 shadow-md bg-white"
       >
         <div className="navbar-start">
           <div className="dropdown">
@@ -67,7 +72,7 @@ const Navber = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button className="text-sm font-medium text-white">
+          <button className="text-sm font-medium text-black">
             <a href={resume} download="resume">
               Download Resume
             </a>

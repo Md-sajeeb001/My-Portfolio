@@ -8,8 +8,8 @@ const AboutMe = () => {
           <div>
             <h3 className="text-4xl font-light sm:text-start text-center max-w-2xl text-[#363636] ">
               i am A passionate{" "}
-              <span className="font-bold text-blue-900">
-                full stack developer
+              <span className="font-bold text-green-400">
+              Frontend Developer
               </span>{" "}
               with a Keep eye details
             </h3>
@@ -59,7 +59,7 @@ const AboutMe = () => {
                 About Me.
               </h2>
               <p className="leading-[26px] ">
-                Hi, I'm Mohammad Sajeeb, a passionate full-stack web developer
+                Hi, I'm Mohammad Sajeeb, a passionate  Frontend developer
                 who thrives on building seamless, user-friendly, and innovative
                 web applications. With expertise in both front-end and back-end
                 development, I specialize in creating dynamic websites that are

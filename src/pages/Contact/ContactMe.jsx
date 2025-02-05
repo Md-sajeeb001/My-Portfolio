@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Element } from "react-scroll";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import Button from "../../shared/Button/Button";
 
 const ContactMe = () => {
   const form = useRef();
@@ -62,8 +63,8 @@ const ContactMe = () => {
                 rows="4"
               />
             </div>
-            <button className="btn w-full text-white mt-8 bg-blue-800 hover:bg-blue-950">
-              Send
+            <button className="text-sm font-medium text-white pt-5 ">
+              <Button text="SEND"></Button>
             </button>
           </form>
         </div>
