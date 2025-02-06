@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Element } from "react-scroll";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
 import Button from "../../shared/Button/Button";
+import toast from "react-hot-toast";
 
 const ContactMe = () => {
   const form = useRef();
@@ -42,9 +42,10 @@ const ContactMe = () => {
           <h2 className="text-3xl py-10 font-bold text-center underline underline-offset-2 text-[#363636]">
             Contact Me
           </h2>
-          <p></p>
         </div>
-        <div className="p-8 card rounded-lg  bg-base-100 w-full shrink-0 shadow-2xl">
+
+        {/* Right Side - Form */}
+        <div className="p-8 card rounded-lg  bg-base-100 w-full shrink-0 shadow-lg">
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-control space-y-5">
               <input

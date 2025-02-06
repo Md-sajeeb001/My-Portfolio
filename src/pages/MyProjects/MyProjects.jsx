@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import ProjectCart from "../../components/ProjectCart";
+// import ProjectCart from "../../components/ProjectCart";
 import { Element } from "react-scroll";
+import ProjectDetails from "../Details/ProjectDetails";
 
 const MyProjects = () => {
-  const [blog, setBolgs] = useState(null);
+  const [project, setBolgs] = useState(null);
 
   useEffect(() => {
     fetch("/Projects.json")
@@ -17,9 +18,9 @@ const MyProjects = () => {
         <h2 className="text-3xl pb-12 font-bold text-center underline underline-offset-2 text-[#363636]">
           My Project.
         </h2>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {blog?.map((item, index) => (
-            <ProjectCart key={index} item={item}></ProjectCart>
+        <div className="">
+          {project?.map((item, index) => (
+            <ProjectDetails key={index} item={item}></ProjectDetails>
           ))}
         </div>
       </div>

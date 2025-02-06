@@ -35,26 +35,28 @@ const MySkills = () => {
           </p>
         </div>
         <div className="max-w-5xl mx-auto grid grid-cols-3 pt-10">
-          <ul className="space-y-5 mx-auto">
+          <ul className="space-y-5 mx-auto ">
             <h3 className="text-center font-bold underline">Frontend</h3>
-            <li data-aos="fade-up" className="w-28 h-18">
-              <img className="w-full h-full" src={html} alt="" />
-            </li>
-            <li data-aos="fade-up" className="w-28 h-18">
-              <img className="w-full h-full" src={css} alt="" />
-            </li>
-            <li data-aos="fade-up" className="w-28 h-18">
-              <img className="w-full h-full" src={js} alt="" />
-            </li>
-            <li data-aos="fade-up" className="w-16 ml-6 h-18">
-              <img className="w-full h-full" src={react} alt="" />
-            </li>
-            <li data-aos="fade-up" className="w-28 h-18">
-              <img className="w-full h-full" src={router} alt="" />
-            </li>
-            <li data-aos="fade-up" className="w-28 h-18">
-              <img className="w-full h-full" src={tailwind} alt="" />
-            </li>
+            <div className="flex flex-wrap space-y-4">
+              <li data-aos="fade-up" className="w-28 h-18">
+                <img className="w-full h-full" src={html} alt="" />
+              </li>
+              <li data-aos="fade-up" className="w-28 h-18">
+                <img className="w-full h-full" src={css} alt="" />
+              </li>
+              <li data-aos="fade-up" className="w-28 h-18">
+                <img className="w-full h-full" src={js} alt="" />
+              </li>
+              <li data-aos="fade-up" className="w-16 ml-6 h-18">
+                <img className="w-full h-full" src={react} alt="" />
+              </li>
+              <li data-aos="fade-up" className="w-28 h-18">
+                <img className="w-full h-full" src={router} alt="" />
+              </li>
+              <li data-aos="fade-up" className="w-14 mx-auto h-18">
+                <img className="w-full mx-auto h-full" src={tailwind} alt="" />
+              </li>
+            </div>
           </ul>
           <ul className="space-y-5 mx-auto">
             <h3 className="text-center font-bold underline">Backend</h3>

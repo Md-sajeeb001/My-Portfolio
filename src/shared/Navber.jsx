@@ -1,6 +1,7 @@
 import logo from "../assets/coding.png";
 import { Element, Link } from "react-scroll";
 import resume from "../../public/Resume.pdf";
+// import { Link } from "react-router-dom";
 
 const Navber = () => {
   const links = (
@@ -66,7 +67,9 @@ const Navber = () => {
             </ul>
           </div>
           <Link duration={1000} smooth={true} to="/">
-            <img className="w-16" src={logo} alt="logo" />
+            <button>
+              <img className="w-16" src={logo} alt="logo" />
+            </button>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

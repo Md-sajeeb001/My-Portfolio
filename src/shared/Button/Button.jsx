@@ -5,7 +5,7 @@ const Button = ({ text }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="flex items-center cursor-pointer group"
+      className="flex items-center cursor-pointer group max-w-56 "
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

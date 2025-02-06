@@ -2,22 +2,37 @@
 
 import { Link } from "react-router-dom";
 import Button from "../shared/Button/Button";
-import resume from "../../public/Resume.pdf"
+import resume from "../../public/Resume.pdf";
 
 const ProjectCart = ({ item }) => {
-  const { image, name, description, _id } = item;
+  const {
+    image,
+    name,
+    description,
+    _id,
+    frontend,
+    backend,
+    liveLink,
+    database,
+    clientLink,
+    serverLink,
+    gitHubLink,
+  } = item;
   console.log(item);
 
   return (
-    <div className="card glass rounded-lg">
-      <figure>
-        <img src={image} alt="project" />
-      </figure>
+    <div className=" glass rounded-lg">
+      <div>
+        <figure>
+          <img src={image} alt="project" />
+        </figure>
+      </div>
       <div className="card-body rounded-lg">
         <h2 className="card-title text-[#363636]">{name}</h2>
         <p className="text-sm text-slate-700">
           {description.substring(0, 50)}....
         </p>
+        
 
         <Link to={`/details/${_id}`}>
           <button className="text-sm font-medium text-white">

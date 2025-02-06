@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import developer from "../../assets/developer.jpg";
+import developer from "../../assets/Resume/profile2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -57,8 +57,7 @@ const AboutMe = () => {
                 CSS, and back-end technologies like Node.js and MongoDB,
                 enabling me to create both beautiful and functional websites.
                 <br />
-                <br />
-                <span className="text-xs text-slate-500 underline">
+                <span className="text-xs text-[#0A66C2] italic font-medium underline">
                   Here's My Hobbies
                 </span>{" "}
                 <br />
