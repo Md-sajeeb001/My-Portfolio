@@ -15,7 +15,7 @@ const MyProjects = () => {
   return (
     <Element name="/work">
       <div className="sm:pt-0 pt-14">
-        <h2 className="text-3xl pb-12 font-bold text-center underline underline-offset-2 text-[#363636]">
+        <h2 className="text-3xl font-bold text-center underline underline-offset-2 text-[#363636]">
           My Project.
         </h2>
         <div className="">

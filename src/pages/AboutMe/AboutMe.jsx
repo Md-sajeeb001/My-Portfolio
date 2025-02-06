@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   return (
     <Element name="/about">
-      <div className="sm:pt-20 pt-10">
+      <div className="sm:pt-20 pt-10 border">
         <div>
           <div data-aos="fade-right">
             <h3 className="text-4xl font-light sm:text-start text-center max-w-2xl text-[#363636] ">
@@ -47,7 +47,7 @@ const AboutMe = () => {
               <h2 className="text-3xl font-bold text-center underline underline-offset-2 text-[#363636]">
                 About Me.
               </h2>
-              <p className="leading-[26px] ">
+              <p className="leading-[26px] text-justify">
                 Hello! I’m a junior web developer with a passion for building
                 dynamic, user-friendly, and visually appealing websites. My
                 journey in programming began with a curiosity for how the web

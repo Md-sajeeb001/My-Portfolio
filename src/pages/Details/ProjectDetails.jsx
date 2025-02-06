@@ -22,11 +22,11 @@ const ProjectDetails = ({ item }) => {
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <div className="lg:w-1/2 h-[100%] m-4 rounded-2xl shadow-inner border-2  p-4">
           <div className="w-full h-full">
-            <figure >
-              <img className="h-full object-contain" src={image} alt="Album" />
+            <figure>
+              <img className="h-full object-contain rounded-md border" src={image} alt="Album" />
             </figure>
           </div>
-          <div className="grid grid-cols-2 gap-5 pt-3">
+          <div className="grid grid-cols-2 gap-5 py-3">
             {demoImg?.map((img, idx) => (
               <img
                 key={idx}
@@ -36,7 +36,7 @@ const ProjectDetails = ({ item }) => {
               />
             ))}
           </div>
-
+          <hr />
           <div className="pt-4">
             <Link to={liveLink} target="_blank">
               <Button text={"Live Link"}></Button>
@@ -77,7 +77,7 @@ const ProjectDetails = ({ item }) => {
               <div>
                 <small>DataBase</small> <br />
                 {database?.map((skill, idx) => (
-                  <div key={idx} className="badge badge-outline">
+                  <div key={idx} className="badge badge-outline badge-success">
                     {skill}
                   </div>
                 ))}

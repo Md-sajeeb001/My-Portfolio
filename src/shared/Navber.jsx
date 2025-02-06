@@ -1,6 +1,7 @@
 import logo from "../assets/coding.png";
 import { Element, Link } from "react-scroll";
 import resume from "../../public/Resume.pdf";
+import Button from "./Button/Button";
 // import { Link } from "react-router-dom";
 
 const Navber = () => {
@@ -78,7 +79,7 @@ const Navber = () => {
         <div className="navbar-end">
           <button className="text-sm font-medium text-black">
             <a href={resume} download="resume">
-              Download Resume
+              <Button text={"Download Resume"}></Button>
             </a>
           </button>
         </div>
