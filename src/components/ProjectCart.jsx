@@ -2,12 +2,22 @@
 
 import { Link } from "react-router-dom";
 import Button from "../shared/Button/Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ProjectCart = ({ item }) => {
   const { image, name, description, _id } = item;
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
-    <div className="card bg-base-100 rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl border">
+    <div
+      data-aos="fade-up"
+      className="card bg-base-100 rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl border"
+    >
       <figure className="w-full h-[210px]">
         <img
           src={image}
