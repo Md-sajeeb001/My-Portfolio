@@ -47,7 +47,7 @@ const ContactMe = () => {
   return (
     <Element name="/contact">
       <div className="sm:py-20 py-10">
-        <h2 className="text-3xl pb-6 font-bold text-center underline underline-offset-2 text-[#363636]">
+        <h2 className="text-3xl pb-8 font-bold text-center underline underline-offset-2 text-[#363636]">
           Contact Me.
         </h2>
         <div

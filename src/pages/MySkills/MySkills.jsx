@@ -2,7 +2,6 @@ import html from "../../assets/logos/html.png";
 import css from "../../assets/logos/css.png";
 import js from "../../assets/logos/js.png";
 import react from "../../assets/logos/react.png";
-import router from "../../assets/logos/router.png";
 import tailwind from "../../assets/logos/tailwind.png";
 import nodejs from "../../assets/logos/nodejs.png";
 import express from "../../assets/logos/express.png";
@@ -56,9 +55,6 @@ const MySkills = () => {
               <li data-aos="fade-up" className="w-16 mx-auto ml-6 h-18">
                 <img className="w-full h-full" src={react} alt="" />
               </li>
-              {/* <li data-aos="fade-up" className="w-28 mx-auto h-18">
-                <img className="w-full h-full" src={router} alt="" />
-              </li> */}
               <li data-aos="fade-up" className="w-12 mx-auto h-12">
                 <img className="w-full mx-auto h-full" src={tailwind} alt="" />
               </li>

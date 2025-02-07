@@ -2,17 +2,20 @@
 
 import { Link } from "react-router-dom";
 import Button from "../shared/Button/Button";
-// import resume from "../../public/Resume.pdf";
 
 const ProjectCart = ({ item }) => {
   const { image, name, description, _id } = item;
 
   return (
-    <div className="card glass rounded-lg">
-      <figure className="w-full h-[50%]">
-        <img src={image} alt="project" className="rounded-md w-full h-full" />
+    <div className="card bg-base-100 rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl border">
+      <figure className="w-full h-[210px]">
+        <img
+          src={image}
+          alt="project"
+          className="rounded-tr-md rounded-tl-md w-full h-full"
+        />
       </figure>
-      <div className="card-body">
+      <div className="card-body p-4">
         <h2 className="card-title text-[#363636]">{name}</h2>
         <p className="text-sm text-slate-700">
           {description.substring(0, 50)}....

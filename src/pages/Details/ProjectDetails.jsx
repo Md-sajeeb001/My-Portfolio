@@ -2,7 +2,6 @@
 import { Link, useParams } from "react-router-dom";
 import Button from "../../shared/Button/Button";
 import { useEffect, useState } from "react";
-import { ScrollLink } from "react-scroll";
 
 const ProjectDetails = () => {
   const [project, setProject] = useState(null);
