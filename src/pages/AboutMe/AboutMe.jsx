@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   return (
     <Element name="/about">
-      <div className="sm:pt-20 pt-10 border">
+      <div className="sm:pt-20 pt-10 ">
         <div>
           <div data-aos="fade-right">
             <h3 className="text-4xl font-light sm:text-start text-center max-w-2xl text-[#363636] ">

@@ -84,7 +84,7 @@ const ProjectDetails = ({ item }) => {
               </div>
               <div className="flex gap-8">
                 {gitHubLink ? (
-                  <Link to={serverLink} target="_blank">
+                  <Link to={gitHubLink} target="_blank">
                     <Button text={"GitHub Link"}></Button>
                   </Link>
                 ) : (

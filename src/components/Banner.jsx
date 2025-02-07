@@ -163,9 +163,9 @@ const Banner = () => {
     //     />
     //   </div>
     // </div>
-    <div className="border border-black w-full flex flex-col sm:flex-row items-center justify-between gap-8 sm:gap-14 sm:py-12 sm:pt-28 pt-20  md:px-12 lg:px-16">
+    <div className=" w-full flex flex-col sm:flex-row items-center justify-between gap-8 sm:gap-14 sm:py-12 sm:pt-28 pt-20  md:px-12 lg:px-16">
       {/* Left Section */}
-      <div className="border sm:w-1/2 w-full space-y-4 md:space-y-6 lg:space-y-5 sm:pb-0 pb-6 sm:text-start text-center flex flex-col justify-center">
+      <div className=" sm:w-1/2 w-full space-y-4 md:space-y-6 lg:space-y-5 sm:pb-0 pb-6 sm:text-start text-center flex flex-col justify-center">
         <h2
           data-aos="fade-right"
           data-aos-duration="600"

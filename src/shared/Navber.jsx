@@ -1,4 +1,4 @@
-import logo from "../assets/coding.png";
+import logo from "../assets/logos/coding.png";
 import { Element, Link } from "react-scroll";
 import resume from "../../public/Resume.pdf";
 import Button from "./Button/Button";
