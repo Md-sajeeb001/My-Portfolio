@@ -8,7 +8,7 @@ import ContactMe from "./Contact/ContactMe";
 const Home = () => {
   return (
     <Element name="/">
-      <div className="px-6 lg:px-0">
+      <div id="home" className="px-6 lg:px-0">
         <div>
           <Banner></Banner>
         </div>

@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-[#0a66c2] text-white py-6">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col space-y-6 items-center justify-between text-center sm:text-left">
           {/* Logo */}
           <Link to="/">
             <button className="flex items-center gap-3">
               <img src={codingLogo} alt="Logo" className="w-14 h-10" />
-              <span className="text-lg font-semibold">Mohammad Sajeeb</span>
+              <span className="text-lg font-semibold block md:hidded">Mohammad Sajeeb</span>
             </button>
           </Link>
 
